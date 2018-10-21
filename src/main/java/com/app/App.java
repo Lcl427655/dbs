@@ -1,5 +1,6 @@
 package com.app;
 
+import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,11 +15,10 @@ public class App {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(App.class, args);
-        Binder binder = Binder.get(context.getEnvironment());
+        //Binder binder = Binder.get(context.getEnvironment());
         // 绑定简单配置
         //MyConfig myConfig = binder.bind("myconfig", Bindable.of(MyConfig.class)).get();
         //System.out.println(myConfig.getUsername());
 
-        //------------
     }
 }
