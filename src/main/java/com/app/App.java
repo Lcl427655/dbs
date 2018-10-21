@@ -18,5 +18,6 @@ public class App {
         // 绑定简单配置
         //MyConfig myConfig = binder.bind("myconfig", Bindable.of(MyConfig.class)).get();
         //System.out.println(myConfig.getUsername());
+        //------------------------
     }
 }
